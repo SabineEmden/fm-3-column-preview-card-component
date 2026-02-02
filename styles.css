@@ -62,6 +62,17 @@ h6 {
   text-wrap: balance;
 }
 
+/* General styles and layout*/
+
+:root {
+  --gold-500: hsl(31, 77%, 52%);
+  --cyan-800: hsl(184, 100%, 22%);
+  --green-950: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --grey-950: sl(0, 0%, 95%);
+}
+
+/* Footer */
 .attribution {
   font-size: 11px;
   text-align: center;
