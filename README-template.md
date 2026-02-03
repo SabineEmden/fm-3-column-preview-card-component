@@ -62,7 +62,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I needed a refresher on best practices for custom web fonts. I had taken a deep dive into this topic for my Frontend Mentor [QR code component solution](https://github.com/SabineEmden/qr-code-component).
+
+The font families in this project are [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca) for normal text and [Big Shoulders](https://fonts.google.com/specimen/Big+Shoulders) for headings. Both are available as variable fonts. Lexend Deca has a weight axis. Big Shoulders has a weight axis and an optical size axis. Optical size adapts the style to specific text sizes. This project uses Lexend Deca only in regular (400) font weight and 15 px font size, Big Shoulders only in bold (700) font weight and 40 px font size. The files I downloaded from Google Fonts contain variable and static versions of the font families.
+
+For Lexend Deca, the TTF file for the variable font has a size of 175 Kb. The size of TTF file for Lexend Deca Regular as a static font is only 78 Kb. I decided to use the static file. Inspection with [Wakamai Fondue](https://wakamaifondue.com/) showed 845 glyphs, much more than the 95 glyphs that are usually enough for English-only websites. Subsetting the font to Basic Latin with the [Font Subsetter](https://everythingfonts.com/subsetter) by Everything Fonts and converting the file to WOFF2 with the [ttf to woff2 converter](https://everythingfonts.com/ttf-to-woff2) also by Everything Fonts reduced the size to 9 Kb.
+
+For Big Shoulders, the TTF file for the variable font has a size of 319 Kb. The size of the TTF file for Big Shoulders 24 pt Bold as a static font is only 95 Kb. A font size of 24 pt is equivalent to 32 px. The next larger font size available in the download as a static font is 36 pt or 48 px. I decided to use the static 24 pt font. Inspection with Wakamai Fondue showed 1065 glyphs. Subsetting the font to Basic Latin and converting the file to WOFF2 reduced the size to 10 Kb.
 
 To see how you can add code snippets, see below:
 
@@ -110,3 +116,5 @@ I'm an aspiring web developer and a former chemist. What I bring from chemistry 
 ## Acknowledgments
 
 This project uses Josh Comeau's [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/).
+
+The font families in this project are [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca) and [Big Shoulders](https://fonts.google.com/specimen/Big+Shoulders). The fonts are licensed under the [Open Font License](https://openfontlicense.org/open-font-license-official-text/).
