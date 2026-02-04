@@ -105,6 +105,42 @@ main {
   padding: 80px 24px;
 }
 
+/* Card component */
+.card {
+  color: var(--transparent-white);
+  display: flex;
+  flex-direction: column;
+  max-width: 38rem;
+}
+
+.card h2 {
+  font-family: "Big Shoulders";
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: var(--grey-950);
+  margin-top: 2rem;
+}
+
+.card p {
+  margin: 1.5rem 0;
+}
+
+.card-section {
+  padding: 48px;
+}
+
+.sedans {
+  background-color: var(--gold-500);
+}
+
+.suvs {
+  background-color: var(--cyan-800);
+}
+
+.luxury {
+  background-color: var(--green-950);
+}
+
 /* Footer */
 .attribution {
   font-size: 0.75rem;
