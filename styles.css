@@ -91,6 +91,18 @@ body {
   /* 15px / 16px = 0.9375rem */
   font-size: 0.9375rem;
   line-height: 1.65;
+  background-color: var(--grey-950);
+  display: flex;
+  flex-direction: column;
+  min-height: 100svh;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 24px;
 }
 
 /* Footer */
