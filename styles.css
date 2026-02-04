@@ -107,9 +107,11 @@ main {
 
 /* Footer */
 .attribution {
-  font-size: 11px;
+  font-size: 0.75rem;
+  color: var(--cyan-800);
   text-align: center;
+  padding-bottom: 24px;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--gold-500);
 }
