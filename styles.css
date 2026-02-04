@@ -72,6 +72,27 @@ h6 {
   --grey-950: sl(0, 0%, 95%);
 }
 
+@font-face {
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-display: swap;
+  src: url("./assets/fonts/LexendDeca-Regular-subset.woff2") format(woff2);
+}
+
+@font-face {
+  font-family: "Big Shoulders";
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/fonts/BigShoulders_24pt-Bold-subset.woff2") format(woff2);
+}
+
+body {
+  font-family: "Lexend Deca";
+  /* 15px / 16px = 0.9375rem */
+  font-size: 0.9375rem;
+  line-height: 1.65;
+}
+
 /* Footer */
 .attribution {
   font-size: 11px;
