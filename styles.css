@@ -111,6 +111,8 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 38rem;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .card h2 {
