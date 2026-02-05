@@ -126,19 +126,20 @@ main {
 }
 
 .card-section {
+  background-color: var(--primary-clr);
   padding: 48px;
 }
 
 .sedans {
-  background-color: var(--gold-500);
+  --primary-clr: var(--gold-500);
 }
 
 .suvs {
-  background-color: var(--cyan-800);
+  --primary-clr: var(--cyan-800);
 }
 
 .luxury {
-  background-color: var(--green-950);
+  --primary-clr: var(--green-950);
 }
 
 /* Footer */
