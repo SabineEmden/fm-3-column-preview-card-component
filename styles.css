@@ -163,6 +163,23 @@ main {
   background-color: var(--primary-clr);
 }
 
+@media (min-width: 36em) {
+  .card-section {
+    padding: 48px 80px;
+  }
+}
+
+@media (min-width: 62em) {
+  .card {
+    flex-direction: row;
+    max-width: 58rem;
+  }
+
+  .card-section {
+    padding: 48px;
+  }
+}
+
 /* Footer */
 .attribution {
   font-size: 0.75rem;
