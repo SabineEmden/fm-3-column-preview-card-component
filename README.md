@@ -1,92 +1,85 @@
-# Frontend Mentor - 3-column preview card component
+# Frontend Mentor - 3-column preview card component solution
 
-![Design preview for the 3-column preview card component coding challenge](preview.jpg)
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+## Overview
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+### The challenge
 
-## The challenge
+The brief for this project was to build out the 3-column preview card and component and get it looking as close to the design as possible, starting with the following assets:
 
-Your challenge is to build out this 3-column preview card component and get it looking as close to the design as possible.
+- Figma design files for mobile, tablet & desktop layouts
+- JPEG design files for mobile & desktop layouts
+- Style guide for fonts, colors, etc.
+- Optimized image assets
+- HTML file with pre-written content
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
-
-Your users should be able to:
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+### Screenshot
 
-## Where to find everything
+![desktop layout](./screenshot.png)
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design.
+### Links
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [GitHub repository](https://github.com/SabineEmden/fm-3-column-preview-card-component)
+- [Live site](https://sabineemden.github.io/fm-3-column-preview-card-component/)
 
-If you would like the Figma design file to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## My process
 
-You will find all the required assets in the `/images` folder. The assets are already optimized.
+### Built with
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
 
-## Building your project
+### What I learned
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+I needed a refresher on best practices for custom web fonts. I had taken a deep dive into this topic for my Frontend Mentor [QR code component solution](https://github.com/SabineEmden/qr-code-component).
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+The font families in this project are [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca) for normal text and [Big Shoulders](https://fonts.google.com/specimen/Big+Shoulders) for headings. Both are available as variable fonts. Lexend Deca has a weight axis. Big Shoulders has a weight axis and an optical size axis. Optical size adapts the style to specific text sizes. This project uses Lexend Deca only in regular (400) font weight and 15 px font size, Big Shoulders only in bold (700) font weight and 40 px font size. The files I downloaded from Google Fonts contain variable and static versions of the font families.
 
-## Deploying your project
+For Lexend Deca, the TTF file for the variable font has a size of 175 Kb. The size of TTF file for Lexend Deca Regular as a static font is only 78 Kb. I decided to use the static file. Inspection with [Wakamai Fondue](https://wakamaifondue.com/) showed 845 glyphs, much more than the 95 glyphs that are usually enough for English-only websites. Subsetting the font to Basic Latin with the [Font Subsetter](https://everythingfonts.com/subsetter) by Everything Fonts and converting the file to WOFF2 with the [ttf to woff2 converter](https://everythingfonts.com/ttf-to-woff2) also by Everything Fonts reduced the file size to 9 Kb.
 
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
+For Big Shoulders, the TTF file for the variable font has a size of 319 Kb. The size of the TTF file for Big Shoulders 24 pt Bold as a static font is only 95 Kb. A font size of 24 pt is equivalent to 32 px. The next larger font size available in the download as a static font is 36 pt or 48 px. I decided to use the static 24 pt font. Inspection with Wakamai Fondue showed 1065 glyphs. Subsetting the font to Basic Latin and converting the file to WOFF2 reduced the file size to 10 Kb.
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+### Continued development
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+I didn't research the question whether having three links with the text "learn more" on the card component negatively affects web accessibility. If it does, the solution will most likely be enhancing the HTML with WAI-ARIA. That is a topic I'm not familiar with yet.
 
-## Create a custom `README.md`
+### Useful resources
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+- [Figma for developers](https://www.frontendmentor.io/articles/figma-for-developers-how-to-work-with-a-design-file-m6CZKZ1rC1) by Matt Studdert for Frontend Mentor - This article helped me to work with the Figma design file for this project and get information like spacing and sizes from it.
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+## Author
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+I'm an aspiring web developer and a former chemist. What I bring from chemistry to software development is a systematic approach to problem solving and the perseverance to not give up easily.
 
-## Submitting your solution
+- Frontend Mentor - [SabineEmden](https://www.frontendmentor.io/profile/SabineEmden)
+- Personal Website - [Sabine Emden](https://www.sabineemden.com/)
+- Mastodon - [@sabineemden](https://social.tchncs.de/@sabineemden)
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+## Acknowledgments
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+This project uses Josh Comeau's [CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/).
 
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback.
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi@frontendmentor.io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
+The font families in this project are [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca) and [Big Shoulders](https://fonts.google.com/specimen/Big+Shoulders). The fonts are licensed under the [Open Font License](https://openfontlicense.org/open-font-license-official-text/).
