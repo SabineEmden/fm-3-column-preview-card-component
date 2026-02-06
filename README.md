@@ -1,6 +1,6 @@
 # Frontend Mentor - 3-column preview card component solution
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help me improve my coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -20,9 +20,9 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### The challenge
 
-The brief for this project was to build out the 3-column preview card and component and get it looking as close to the design as possible, starting with the following assets:
+The brief for this project was to build out the 3-column preview card component and get it looking as close to the design as possible, starting with the following assets:
 
-- Figma design files for mobile, tablet & desktop layouts
+- Figma design file for mobile, tablet & desktop layouts
 - JPEG design files for mobile & desktop layouts
 - Style guide for fonts, colors, etc.
 - Optimized image assets
@@ -64,7 +64,7 @@ For Big Shoulders, the TTF file for the variable font has a size of 319 Kb. The 
 
 ### Continued development
 
-I didn't research the question whether having three links with the text "learn more" on the card component negatively affects web accessibility. If it does, the solution will most likely be enhancing the HTML with WAI-ARIA. That is a topic I'm not familiar with yet.
+I didn't research whether having three links with the text "learn more" on the card component negatively affects web accessibility. If it does, the solution will most likely be enhancing the HTML with WAI-ARIA. That's a topic I'm not yet familiar with.
 
 ### Useful resources
 
