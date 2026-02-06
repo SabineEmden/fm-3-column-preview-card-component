@@ -115,6 +115,25 @@ main {
   overflow: hidden;
 }
 
+.sedans {
+  --primary-clr: var(--gold-500);
+}
+
+.suvs {
+  --primary-clr: var(--cyan-800);
+}
+
+.luxury {
+  --primary-clr: var(--green-950);
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-clr);
+  padding: 48px;
+}
+
 .card img {
   height: 2.5rem;
   align-self: start;
@@ -131,25 +150,6 @@ main {
 .card p {
   flex-grow: 1;
   margin: 1.5rem 0;
-}
-
-.card-section {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--primary-clr);
-  padding: 48px;
-}
-
-.sedans {
-  --primary-clr: var(--gold-500);
-}
-
-.suvs {
-  --primary-clr: var(--cyan-800);
-}
-
-.luxury {
-  --primary-clr: var(--green-950);
 }
 
 .button {
