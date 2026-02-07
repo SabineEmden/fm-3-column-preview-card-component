@@ -141,6 +141,7 @@ main {
 .card-section {
   display: flex;
   flex-direction: column;
+  align-items: start;
   background-color: var(--primary-clr);
   padding: 48px;
 }
@@ -164,11 +165,6 @@ main {
 }
 
 .button {
-  width: fit-content;
-}
-
-.button a {
-  display: block;
   text-decoration: none;
   color: var(--primary-clr);
   background-color: var(--grey-950);
@@ -177,7 +173,7 @@ main {
   border-radius: 25px;
 }
 
-.button a:hover {
+.button:hover {
   color: var(--grey-950);
   background-color: var(--primary-clr);
 }
