@@ -64,17 +64,17 @@ For Big Shoulders, the TTF file for the variable font has a size of 319 Kb. The 
 
 ### Continued development
 
-When I submitted this solution on the Frontend Mentor platform I was guessing the three buttons with the text "learn more" on the card component could negatively affects web accessibility. I hadn't looked into the issue more because I assumed to fix it I needed to enhance the HTML with WAI-ARIA, a topic I'm not yet familiar with.
+When I submitted this solution on the Frontend Mentor platform I was guessing the three buttons with the text "learn more" on the card component could negatively affect web accessibility. I hadn't looked into the issue more because I assumed I needed to enhance the HTML with WAI-ARIA to fix it, a topic I'm not yet familiar with.
 
-The AI-enhanced accessibility report that Frontend Mentor provides for PRO subscribers confirmed the issue and recommended an easier fix: adding visually hidden text to the links to make them more descriptive for users of screens readers.
+The AI-enhanced accessibility report that Frontend Mentor provides for PRO subscribers confirmed the issue and recommended an easier fix: adding visually hidden text to the links to make them more descriptive for users of screen readers.
 
-Before:
+**Before:**
 
 ```html
 <a href="#">Learn More</a>
 ```
 
-After:
+**After:**
 
 ```html
 <a href="#">Learn More <span class="sr-only">about Sedans</span></a>
