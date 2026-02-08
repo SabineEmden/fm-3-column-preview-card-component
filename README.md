@@ -39,7 +39,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/3-column-preview-card-component-GLVFVvCevi)
 - [GitHub repository](https://github.com/SabineEmden/fm-3-column-preview-card-component)
 - [Live site](https://sabineemden.github.io/fm-3-column-preview-card-component/)
 
@@ -64,7 +64,34 @@ For Big Shoulders, the TTF file for the variable font has a size of 319 Kb. The 
 
 ### Continued development
 
-I didn't research whether having three links with the text "learn more" on the card component negatively affects web accessibility. If it does, the solution will most likely be enhancing the HTML with WAI-ARIA. That's a topic I'm not yet familiar with.
+When I submitted this solution on the Frontend Mentor platform I was guessing the three buttons with the text "learn more" on the card component could negatively affects web accessibility. I hadn't looked into the issue more because I assumed to fix it I needed to enhance the HTML with WAI-ARIA, a topic I'm not yet familiar with.
+
+The AI-enhanced accessibility report that Frontend Mentor provides for PRO subscribers confirmed the issue and recommended an easier fix: adding visually hidden text to the links to make them more descriptive for users of screens readers.
+
+Before:
+
+```html
+<a href="#">Learn More</a>
+```
+
+After:
+
+```html
+<a href="#">Learn More <span class="sr-only">about Sedans</span></a>
+```
+
+```css
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+```
 
 ### Useful resources
 
