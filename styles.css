@@ -98,7 +98,7 @@ h6 {
 }
 
 body {
-  font-family: "Lexend Deca";
+  font-family: "Lexend Deca", sans-serif;
   /* 15px / 16px = 0.9375rem */
   font-size: 0.9375rem;
   line-height: 1.65;
@@ -151,7 +151,7 @@ main {
 }
 
 .card h2 {
-  font-family: "Big Shoulders";
+  font-family: "Big Shoulders", sans-serif;
   font-size: 2.5rem;
   line-height: 1.2;
   color: var(--grey-950);
